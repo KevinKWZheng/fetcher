@@ -7,9 +7,9 @@
   "dependencies": {
     "node-fetch": "^3.3.1"
   },
-  "name": "fetcher",
+  "name": "ts-node-fetcher",
   "description": "A easier-to-use 'node-fetch'",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "main.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
