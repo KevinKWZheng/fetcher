@@ -8,7 +8,7 @@ import fetch from "node-fetch";
  * @param body same as headers
  * @returns the object delivered by the fetch request, but already parsed as object. Returns the error if occured.
  */
-export async function fetcher(url: string, method: "GET" | "POST", headers: Record<string, string>, body?: Record<string, any>) {
+export async function fetcher(url: string, method: "GET" | "POST", headers: Record<string, string>, body?: Record<string, any>): Promise<any> {
     // Use try/catch to handle errors
     try {
         // Stringify body if it is an object
@@ -21,7 +21,7 @@ export async function fetcher(url: string, method: "GET" | "POST", headers: Reco
         // Check if response is ok
         if (response.ok) {
             // Return response as parsed object
-            return JSON.parse(result as string);
+            return JSON.parse(JSON.stringify(result));
         } else {
             // Throw an error with status text
             throw response.statusText;

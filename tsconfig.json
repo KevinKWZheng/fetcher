@@ -1,5 +1,11 @@
 {
     "compilerOptions": {
-        "strict": true
+        "strict": true,
+        "baseUrl": ".",
+        "declaration": true,
+        "outDir": "dist",
+        "esModuleInterop": true,
+        "module": "ES2022",
+        "moduleResolution": "node"
     }
 }
