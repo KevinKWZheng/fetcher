@@ -8,7 +8,7 @@
   },
   "name": "ts-node-fetcher",
   "description": "A easier-to-use 'node-fetch'",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "main": "src/main.ts",
   "types": "src/types.d.ts",
   "type": "module",

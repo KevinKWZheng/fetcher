@@ -29,6 +29,6 @@ export async function fetcher(url: string, method: "GET" | "POST", headers: Reco
     } catch (error) {
         // Log or handle the error
         console.error(error);
-        return error;
+        return null;
     }
 }
